@@ -1,0 +1,431 @@
+html {
+    font-size: 14px;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: rgb(17, 17, 19);
+}
+
+canvas {
+
+    position: absolute;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Навигационная панель */
+.navbar {
+    background-color: rgb(25, 25, 28);
+    height: 150px;
+    width: 100vw;
+    position: relative;
+    z-index: 15;
+}
+
+
+.navbar__logo {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar__logo > img {
+    width: 80%;
+    height: 80%;
+}
+
+.navbar__btn {
+    list-style-type: none;
+}
+
+.navbar__btn-item {
+    display: inline;
+}
+
+.navbar__btn-link {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.navbar__btn-link:hover {
+    color: rgba(255, 40, 40, 1);
+}
+
+@media (max-width: 1000px) {
+    .navbar__btn {
+        display: none;
+    }
+
+}
+
+
+/* Кнопка мобильной версии          26 минута */
+
+.menu-icon {
+    z-index: 19;
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu-icon-line {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #f1f1f1;
+}
+
+.menu-icon-line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #f1f1f1;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #f1f1f1;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* Мобильная навигация */
+
+.mobile__nav {
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: -350px;
+    height: 310px;
+    width: 100vw;
+    background-color: rgb(25, 25, 28);
+    padding: 30px;
+    transition: transform 0.5s linear;
+}
+
+.mobile__nav-active {
+    transform: translateY(160%);
+}
+
+.mobile__nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile__nav-item {
+    margin-bottom: 30px;
+
+}
+
+.mobile__nav-link {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    user-select: none;
+    outline: none;
+}
+
+.mobile__nav-link:hover {
+    color: rgba(255, 40, 40, 1);
+}
+
+/* Первый экран */
+
+.header {
+    display: block;
+    padding-top: 20em;
+    height: 100vh;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding-top: 40em;
+    }
+
+    .header > h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-height: 590px) {
+    .header {
+        padding-top: 10em;
+    }
+}
+
+/* Блок обо мне */
+.about {
+
+}
+
+.about-txt {
+    color: #f1f1f1;
+    text-align: left;
+}
+
+.about-img {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+.about-img > img {
+    width: 100%;
+    height: 80%;
+    border-radius: 3px;
+    box-shadow: 5px 5px;
+}
+
+@media (max-width: 1000px) {
+    .about-txt {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about {
+        display: none;
+    }
+}
+
+.about__mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .about__mobile {
+        display: block;
+        margin: 50px 0 50px 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-img {
+        justify-content: center;
+    }
+}
+
+
+/* Портфолио */
+.portfolio {
+    background-color: rgb(25, 25, 28);
+    margin-top: 10em;
+    padding-bottom: 5em;
+    overflow: hidden;
+}
+
+.portfolio-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slider {
+    position: relative;
+}
+
+
+.slider__item {
+    height: 400px;
+}
+
+.slider__item-block {
+    margin: 50px 20px 20px 20px;
+    background-color: #f1f1f1;
+}
+
+.slider__item-block > img {
+    width: 100%;
+    height: 200px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+    padding: 10px;
+    text-indent: -99999px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+}
+
+.slick-arrow.slick-prev {
+    left: 0;
+    margin-left: 30px;
+    background: url('../img/back.svg') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next {
+    right: 0;
+    margin-right: 30px;
+    background: url('../img/next.svg') 0 0 / 100% no-repeat;
+}
+
+.slider__item-h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.slider__item-h3 > a {
+    text-decoration: none;
+    color: rgb(25, 25, 28);
+}
+
+.slider__item-p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(25, 25, 28);
+    height: 100px;
+}
+
+/* Контакты */
+.contact {
+    background-color: rgb(17, 17, 19);
+    padding-bottom: 50px;
+}
+
+.contact__head {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact__head-title {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.contact__head-left > ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.contact__head-left > ul > li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: #f1f1f1;
+}
+
+@media (max-width: 1000px) {
+    .contact__head-left > ul > li {
+        font-size: 2.3rem;
+    }
+}
+
+.contact__head-inf {
+    margin-top: 15px;
+    color: #f1f1f1;
+}
+
+.contact__head-right {
+    text-align: center;
+}
+
+.icons {
+    position: relative;
+    background-color: rgb(25, 25, 28);
+    font-size: 2.5rem;
+    border-radius: 4em;
+    display: inline-block;
+    padding: 0.35em 0.75em 0.35em 0.75em;
+    list-style: none;
+}
+
+@media (max-width: 1000px) {
+    .icons {
+        font-size: 3.5rem;
+    }
+}
+
+.icons > li {
+    display: inline;
+    padding: 10px;
+}
+
+.icon > a > i {
+    color: #f1f1f1;
+    transition: all 0.4s linear;
+}
+
+.icon > a > i:hover {
+    color: rgba(255, 40, 40, 1);
+}
