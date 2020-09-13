@@ -13,6 +13,7 @@ html {
 body {
     margin: 0;
     background: rgb(17, 17, 19);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -36,6 +37,7 @@ h3 {
 p {
     font-size: 1.5rem;
 }
+
 
 /* Прелоадер */
 
@@ -168,6 +170,12 @@ p {
     .mobile__navbar {
         display: none;
     }
+}
+
+@media (max-resolution: 95dpi) {
+    .mobile__logo {
+    display: none;
+}
 }
 
 /* Кнопка мобильной версии*/
