@@ -172,12 +172,6 @@ p {
     }
 }
 
-@media (max-resolution: 95dpi) {
-    .mobile__logo {
-    display: none;
-}
-}
-
 /* Кнопка мобильной версии*/
 
 .menu-icon {
