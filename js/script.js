@@ -135,7 +135,7 @@ $(document).ready(function () {
     {
       breakpoint: 1000,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 1
       }
     }
     ]

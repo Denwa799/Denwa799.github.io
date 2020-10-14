@@ -412,6 +412,16 @@ p {
     height: 200px;
 }
 
+@media (max-width: 1000px) {
+    .slider__item {
+        height: 850px;
+    }
+    .slider__item-block > img {
+    width: 100%;
+    height: 450px;
+    }
+}
+
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -457,6 +467,16 @@ p {
     color: rgb(25, 25, 28);
     height: 100px;
 }
+
+@media (max-width: 1000px) {
+    .slider__item-h3 {
+        font-size: 2.5rem;
+    }
+    .slider__item-p {
+    font-size: 2rem;
+    }
+}
+
 
 /* Контакты */
 .contact {
