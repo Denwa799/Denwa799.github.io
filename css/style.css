@@ -24,9 +24,21 @@ h2 {
     font-size: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     h2 {
         font-size: 4rem;
+    }
+}
+
+@media (max-width: 353px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 3rem;
     }
 }
 
@@ -37,6 +49,7 @@ h3 {
 p {
     font-size: 1.5rem;
 }
+
 
 
 /* Прелоадер */
@@ -91,7 +104,7 @@ p {
     height: 100vh;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .particlesMobile {
         display: block;
     }
@@ -138,11 +151,10 @@ p {
     color: rgba(255, 40, 40, 1);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .navbar {
         display: none;
     }
-
 }
 
 /* Мобильная навигация */
@@ -157,8 +169,8 @@ p {
 }
 
 .mobile__logo {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .mobile__logo > img {
@@ -166,13 +178,25 @@ p {
     height: 80%;
 }
 
-@media (min-width: 981px) {
+@media (min-width: 768px) {
+    .mobile__logo > img {
+    width: 60%;
+    height: 60%;
+} 
+}
+
+@media (min-width: 769px) {
+       
     .mobile__navbar {
         display: none;
     }
 }
 
 /* Кнопка мобильной версии*/
+
+.mobile_btn{
+    width: 50%;
+}
 
 .menu-icon {
     z-index: 19;
@@ -184,7 +208,7 @@ p {
 }
 
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .menu-icon {
         display: flex;
         align-items: center;
@@ -264,7 +288,6 @@ p {
 
 .mobile__nav-item {
     margin-bottom: 30px;
-
 }
 
 .mobile__nav-link {
@@ -280,9 +303,15 @@ p {
     color: rgba(255, 40, 40, 1);
 }
 
-@media (min-width: 981px) {
+@media (min-width: 769px) {
     .mobile__nav {
         display: none;
+    }
+}
+
+@media (max-height: 600px){
+    .mobile__nav-link {
+        font-size: 2.3rem;
     }
 }
 
@@ -296,7 +325,7 @@ p {
     z-index: 8;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .particles {
         display: none;
     }
@@ -304,26 +333,12 @@ p {
 
 .header {
     display: block;
-    padding-top: 20em;
+    padding-top: 10em;
+
     height: 100vh;
     z-index: 5;
 }
 
-@media (max-width: 980px) {
-    .header {
-        padding-top: 40em;
-    }
-
-    .header > h1 {
-        font-size: 6rem;
-    }
-}
-
-@media (max-height: 590px) {
-    .header {
-        padding-top: 10em;
-    }
-}
 
 /* Блок обо мне */
 .about {
@@ -349,14 +364,14 @@ p {
     box-shadow: 5px 5px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .about-txt {
         text-align: center;
         font-size: 2.5rem;
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .about {
         display: none;
     }
@@ -366,14 +381,14 @@ p {
     display: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .about__mobile {
         display: block;
-        margin: 50px 0 50px 0;
+        margin: 50px 0 100px 0;
     }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
     .about-img {
         justify-content: center;
     }
@@ -412,13 +427,13 @@ p {
     height: 200px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
     .slider__item {
-        height: 850px;
+        height: 500px;
     }
     .slider__item-block > img {
     width: 100%;
-    height: 450px;
+    height: 300px;
     }
 }
 
@@ -468,7 +483,7 @@ p {
     height: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
     .slider__item-h3 {
         font-size: 2.5rem;
     }
@@ -505,11 +520,26 @@ p {
     color: #f1f1f1;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
+
     .contact__head-left > ul > li {
+        padding: 10px 0px 10px 0px;
         font-size: 2.3rem;
     }
 }
+
+@media (max-width: 353px) {
+    .contact__head-left > ul > li {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact__head-left > ul > li {
+        font-size: 1.8rem;
+    }
+}
+
 
 .contact__head-inf {
     margin-top: 15px;
@@ -530,7 +560,11 @@ p {
     list-style: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 769px) {
+    .contact__head-right {
+        padding-top: 30px;
+    }
+
     .icons {
         font-size: 3.5rem;
     }

@@ -114,14 +114,14 @@
 
 //preloader
 
-document.body.onload = function() {
+/*document.body.onload = function() {
   setTimeout(function() {
     let preloader = document.getElementById('page__preloader');
     if (!preloader.classList.contains('done')) {
       preloader.classList.add('done');
     }
   }, 1000);
-}
+}*/
 
 //slider
 
@@ -133,7 +133,19 @@ $(document).ready(function () {
     touchThreshold: 20,
     responsive: [
     {
-      breakpoint: 1000,
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1001,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 700,
       settings: {
         slidesToShow: 1
       }
