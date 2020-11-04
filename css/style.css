@@ -295,7 +295,7 @@ p {
     color: #f1f1f1;
     text-decoration: none;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.2rem;
     user-select: none;
     outline: none;
 }
@@ -307,12 +307,6 @@ p {
 @media (min-width: 769px) {
     .mobile__nav {
         display: none;
-    }
-}
-
-@media (max-height: 600px){
-    .mobile__nav-link {
-        font-size: 2.3rem;
     }
 }
 
