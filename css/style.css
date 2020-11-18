@@ -226,7 +226,7 @@ p {
     width: 30px;
     height: 5px;
     background-color: #f1f1f1;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
 
 .menu-icon-line::after {
@@ -237,7 +237,7 @@ p {
     width: 30px;
     height: 5px;
     background-color: #f1f1f1;
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line {
@@ -247,13 +247,13 @@ p {
 .menu-icon.menu-icon-active .menu-icon-line::before {
     transform: rotate(45deg);
     top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line::after {
     transform: rotate(-45deg);
     top: 0;
-    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
 }
 
 /* Мобильная навигация список */
@@ -269,7 +269,7 @@ p {
     width: 100vw;
     background-color: rgb(25, 25, 28);
     padding: 30px;
-    transition: transform 0.5s linear;
+    transition: transform 0.3s linear;
 }
 
 .mobile__nav-active {
