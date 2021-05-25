@@ -399,7 +399,6 @@ p {
     width: 100%;
     height: 200px;
 }
-
 @media (max-width: 1001px) {
     .slider__item {
         height: 500px;
