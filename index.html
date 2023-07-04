@@ -1,517 +1,537 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="descripton"
-      content="Сайт - портфолио веб разработчика Фомина Никиты"
-    />
-    <meta
-      name="Keywords"
-      content="denwa, denwa799, github, git, фомин, никита, портфолио"
-    />
-    <title>Denwa</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <div id="page__preloader" class="preloader">
-      <div class="loader"></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta
+  name="descripton"
+  content="Сайт - портфолио веб разработчика Фомина Никиты"
+  />
+  <meta
+  name="Keywords"
+  content="denwa, denwa799, github, git, фомин, никита, портфолио"
+  />
+  <title>Denwa</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+  <div id="page__preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
 
-    <canvas class="particlesMobile"></canvas>
+  <canvas class="particlesMobile"></canvas>
 
-    <div class="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 navbar__logo">
-            <img
-              src="img/logo/Denwa-Web-Dev-600x600(web).png"
-              alt="Denwa web developer"
-            />
-          </div>
-          <div class="col-md-6 d-flex align-self-center">
-            <ul class="navbar__btn">
-              <li class="navbar__btn-item">
-                <a href="#main" class="navbar__btn-link">Главная</a>
-              </li>
-              <li class="navbar__btn-item">
-                <a href="#about" class="navbar__btn-link">Обо мне</a>
-              </li>
-              <li class="navbar__btn-item">
-                <a href="#portfolio" class="navbar__btn-link">Портфолио</a>
-              </li>
-              <li class="navbar__btn-item">
-                <a href="#contact" class="navbar__btn-link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 d-flex align-self-center">
-            <ul class="navbar__btn">
-              <li class="navbar__btn-item">
-                <a href="tel:+79885054219" class="navbar__btn-link"
-                  >+7 (988) 505-42-19</a
-                >
-              </li>
-              <li class="navbar__btn-item">
-                <a href="mailto:denwa799@yandex.ru" class="navbar__btn-link"
-                  >denwa799@yandex.ru</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mobile__navbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mobile__logo">
-            <img
-              src="img/logo/Denwa-Web-Dev-600x600(web).png"
-              alt="Denwa web developer"
-            />
-          </div>
-          <div
-            class="col-md-6 mobile_btn d-flex align-self-center justify-content-end"
-          >
-            <div id="menu-togle" class="menu-icon">
-              <div class="menu-icon-line"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="mobile__nav" class="mobile__nav">
-      <ul class="mobile__nav-list">
-        <li class="mobile__nav-item">
-          <a href="#main" class="mobile__nav-link">Главная</a>
-        </li>
-        <li class="mobile__nav-item">
-          <a href="#about" class="mobile__nav-link">Обо мне</a>
-        </li>
-        <li class="mobile__nav-item">
-          <a href="#portfolio" class="mobile__nav-link">Портфолио</a>
-        </li>
-        <li class="mobile__nav-item">
-          <a href="#contact" class="mobile__nav-link">Контакты</a>
-        </li>
-      </ul>
-    </div>
-
-    <div id="particles" class="particles"></div>
-
-    <div id="main" class="container">
+  <div class="navbar">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="header">
-            <h1>NIKITA FOMIN</h1>
-            <h3>FRONTEND DEVELOPER</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="about" class="container">
-      <div class="row about">
-        <div class="col-md-8">
-          <h3 class="about-txt">
-            Привет, меня зовут Никита, я frontend - разработчик из города Сочи.
-          </h3>
-          <p class="about-txt">
-            Мне 22 года, и я постоянно разиваю навыки в IT - сфере.
-          </p>
-          <p class="about-txt">
-            Специализируюсь на JavaScript разработке. Пишу приложения
-            преимущественно с использованием React JS и TypeScript.
-          </p>
-          <p class="about-txt">
-            Для управления стейтом приложения использую Redux. Имею опыт
-            разработки мобильных приложений с React Native. А также backend с
-            использованием Nest JS и упаковкой приложения в контейнеры при
-            помощи docker/docker-compose
-          </p>
-          <p class="about-txt">
-            В качестве React UI framework в основном использую Ant Design
-          </p>
-        </div>
-        <div class="col-md-4 about-img">
-          <img src="img/photo/nikita5.webp" alt="Nikita Fomin" />
-        </div>
-      </div>
-    </div>
-
-    <div class="certificates container">
-      <div class="row">
-        <div class="col-12 col-sm-12">
-          <h2 class="title">Сертификат</h2>
-        </div>
-        <div
-          class="certificates__content col-12 col-sm-12 d-flex justify-content-center"
-        >
+        <div class="col-md-2 navbar__logo">
           <img
-            src="img/certificates/Frontend SimbirSoft.webp"
-            alt="Frontend SimbirSoft"
-            class="certificates__image"
+          src="img/logo/Denwa-Web-Dev-600x600(web).png"
+          alt="Denwa web developer"
           />
         </div>
-      </div>
-    </div>
-
-    <div id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="title">Портфолио</h2>
-          </div>
+        <div class="col-md-6 d-flex align-self-center">
+          <ul class="navbar__btn">
+            <li class="navbar__btn-item">
+              <a href="#main" class="navbar__btn-link">Главная</a>
+            </li>
+            <li class="navbar__btn-item">
+              <a href="#about" class="navbar__btn-link">Обо мне</a>
+            </li>
+            <li class="navbar__btn-item">
+              <a href="#portfolio" class="navbar__btn-link">Портфолио</a>
+            </li>
+            <li class="navbar__btn-item">
+              <a href="#contact" class="navbar__btn-link">Контакты</a>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <div class="slider">
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://apps.rustore.ru/app/com.tasks_tracker">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/tasks-tracker.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://apps.rustore.ru/app/com.tasks_tracker">
-                Tasks Tracker
-              </a>
-            </h3>
-            <p class="slider__item-p">ReactNative + NestJS</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://denwa799.github.io/need-for-drive/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/need-for-drive.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://denwa799.github.io/need-for-drive/">
-                Need for drive
-              </a>
-            </h3>
-            <p class="slider__item-p">React приложение</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://denwa799.github.io/need-for-drive/#/admin">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/need-for-drive-admin.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://denwa799.github.io/need-for-drive/#/admin">
-                Need for drive (admin)
-              </a>
-            </h3>
-            <p class="slider__item-p">React приложение</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://denwa799.github.io/SoccerStat/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/soccer-stat.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://denwa799.github.io/SoccerStat/"> Soccer Stat </a>
-            </h3>
-            <p class="slider__item-p">React приложение с футбольными матчами</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://btlsochi.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/sochinenie.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://btlsochi.ru/"> Сочинение </a>
-            </h3>
-            <p class="slider__item-p">Доработка сайта</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://ros-pech.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/ros-pech.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://ros-pech.ru/"> ros-pech.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://teplo.delay-bloki.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/teplo.delay-bloki.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://teplo.delay-bloki.ru/"> teplo.delay-bloki.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://krasnodarzavod.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/krasnodarzavod.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://krasnodarzavod.ru/"> krasnodarzavod.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://super-pechka.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/super-pechka.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://super-pechka.ru/"> super-pechka.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://sibir.delay-bloki.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/sibir.delay-bloki.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://sibir.delay-bloki.ru/"> sibir.delay-bloki.ru </a>
-            </h3>
-            <p class="slider__item-p">Доработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://4-packing.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/4-packing.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://4-packing.ru/"> 4-packing.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://ussr-teplo.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/ussr-teplo.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://ussr-teplo.ru/"> ussr-teplo.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://baikal-smoke.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/baikal.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://baikal-smoke.ru/"> baikal-smoke.ru </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://spinerfly.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/spinerfly.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://spinerfly.ru/"> SpynerFly </a>
-            </h3>
-            <p class="slider__item-p">Разработка лендинга</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://leto.btlsochi.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/leto.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://leto.btlsochi.ru/"> Leto.btlsochi.ru </a>
-            </h3>
-            <p class="slider__item-p">Доработка сайта</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="layout/light-dark-modeJS/index.html">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/light-dark.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="layout/light-dark-modeJS/index.html">
-                Light-dark Mode
-              </a>
-            </h3>
-            <p class="slider__item-p">Светлая/темная тема сайта</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <a href="https://drivenew.ru/">
-              <img
-                class="slider__item-img"
-                src="img/portfolio/drivenews.webp"
-                alt=""
-              />
-            </a>
-            <h3 class="slider__item-h3">
-              <a href="https://drivenew.ru/"> DriveNews </a>
-            </h3>
-            <p class="slider__item-p">Более трех лет администрирования</p>
-          </div>
-        </div>
-        <div class="slider__item">
-          <div class="slider__item-block">
-            <img class="slider__item-img" src="img/mark.webp" alt="" />
-            <h3 class="slider__item-h3">
-              <a href="#"> ??? </a>
-            </h3>
-            <p class="slider__item-p">Место для Вашего проекта</p>
-          </div>
+        <div class="col-md-4 d-flex align-self-center">
+          <ul class="navbar__btn">
+            <li class="navbar__btn-item">
+              <a href="tel:+79885054219" class="navbar__btn-link"
+              >+7 (988) 505-42-19</a
+              >
+            </li>
+            <li class="navbar__btn-item">
+              <a href="mailto:denwa799@yandex.ru" class="navbar__btn-link"
+              >denwa799@yandex.ru</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contact" class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 contact__head">
-            <h2 class="title">Контактная информация</h2>
-          </div>
-          <div class="col-md-6 contact__head-left">
-            <ul>
-              <li>Сочи. Адлерский район.</li>
-              <li>Россия</li>
-              <li class="contact__head-inf">+7 (988) 505-42-19</li>
-              <li class="contact__head-inf">denwa799@yandex.ru</li>
-            </ul>
-          </div>
-          <div class="col-md-6 contact__head-right">
-            <ul class="icons">
-              <li class="icon">
-                <a href="https://vk.com/denwa799"
-                  ><i class="fa fa-vk" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="icon">
-                <a href="mailto:denwa799@yandex.ru"
-                  ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li class="icon">
-                <a href="https://github.com/Denwa799"
-                  ><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+  <div class="mobile__navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mobile__logo">
+          <img
+          src="img/logo/Denwa-Web-Dev-600x600(web).png"
+          alt="Denwa web developer"
+          />
+        </div>
+        <div
+        class="col-md-6 mobile_btn d-flex align-self-center justify-content-end"
+        >
+        <div id="menu-togle" class="menu-icon">
+          <div class="menu-icon-line"></div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+<div id="mobile__nav" class="mobile__nav">
+  <ul class="mobile__nav-list">
+    <li class="mobile__nav-item">
+      <a href="#main" class="mobile__nav-link">Главная</a>
+    </li>
+    <li class="mobile__nav-item">
+      <a href="#about" class="mobile__nav-link">Обо мне</a>
+    </li>
+    <li class="mobile__nav-item">
+      <a href="#portfolio" class="mobile__nav-link">Портфолио</a>
+    </li>
+    <li class="mobile__nav-item">
+      <a href="#contact" class="mobile__nav-link">Контакты</a>
+    </li>
+  </ul>
+</div>
+
+<div id="particles" class="particles"></div>
+
+<div id="main" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="header">
+        <h1>NIKITA FOMIN</h1>
+        <h3>FRONTEND DEVELOPER</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="container">
+  <div class="row about">
+    <div class="col-md-8">
+      <h3 class="about-txt">
+        Привет, меня зовут Никита, я frontend - разработчик из города Сочи.
+      </h3>
+      <p class="about-txt">
+        Несколько лет занимаюсь web разработкой и постоянно изучаю что-то новое.
+      </p>
+      <p class="about-txt">
+       Пишу frontend приложения преимущественно с использованием ReactJS и TypeScript. Для SSR использую NextJS. Работал также с DOM при помощи чистого JavaScript.
+     </p>
+     <p class="about-txt">
+      Для управления глобальным состоянием приложения предпочитаю Redux. Имею опыт разработки мобильных приложений на React Native.
+      Работал с UI framework: Ant Design и Material UI.
+    </p>
+    <p class="about-txt">
+      Backend пишу на NodeJS с использованием фреймворка NestJS. Работал с базами данных MySQL и PostgreSQL через Sequelize и TypeORM. Подключал Redis, Sentry и использовал Cron.
+    </p>
+    <p class="about-txt">
+      Имею опыт упаковки приложения в контейнеры Docker.
+    </p>
+    <p class="about-txt">
+      Также как приятный бонус имею красный диплом высшего технического образования. Кафедра математики и информационных технологий, отделение "Прикладная информатика".
+    </p>
+  </div>
+  <div class="col-md-4 about-img">
+    <img src="img/photo/nikita5.webp" alt="Nikita Fomin" />
+  </div>
+</div>
+</div>
+
+<div class="certificates container">
+  <div class="row">
+    <div class="col-12 col-sm-12">
+      <h2 class="title">Сертификат</h2>
+    </div>
+    <div
+    class="certificates__content col-12 col-sm-12 d-flex justify-content-center"
+    >
+    <img
+    src="img/certificates/Frontend SimbirSoft.webp"
+    alt="Frontend SimbirSoft"
+    class="certificates__image"
+    />
+  </div>
+</div>
+</div>
+
+<div id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title">Портфолио</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider">
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://rost-sochi.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/rost.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://rost-sochi.ru/" target="__blank">
+            Рост Недвижимость
+          </a>
+        </h3>
+        <p class="slider__item-p">NextJS + NestJS</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://apps.rustore.ru/app/com.tasks_tracker" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/tasks-tracker.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://apps.rustore.ru/app/com.tasks_tracker" target="__blank">
+            Tasks Tracker
+          </a>
+        </h3>
+        <p class="slider__item-p">ReactNative + NestJS</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://denwa799.github.io/need-for-drive/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/need-for-drive.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://denwa799.github.io/need-for-drive/" target="__blank">
+            Need for drive
+          </a>
+        </h3>
+        <p class="slider__item-p">React приложение</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://denwa799.github.io/need-for-drive/#/admin" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/need-for-drive-admin.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://denwa799.github.io/need-for-drive/#/admin" target="__blank">
+            Need for drive (admin)
+          </a>
+        </h3>
+        <p class="slider__item-p">React приложение</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://denwa799.github.io/SoccerStat/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/soccer-stat.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://denwa799.github.io/SoccerStat/" target="__blank"> Soccer Stat </a>
+        </h3>
+        <p class="slider__item-p">React приложение с футбольными матчами</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://btlsochi.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/sochinenie.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://btlsochi.ru/" target="__blank"> Сочинение </a>
+        </h3>
+        <p class="slider__item-p">Доработка сайта</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://ros-pech.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/ros-pech.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://ros-pech.ru/" target="__blank"> ros-pech.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://teplo.delay-bloki.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/teplo.delay-bloki.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://teplo.delay-bloki.ru/" target="__blank"> teplo.delay-bloki.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://krasnodarzavod.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/krasnodarzavod.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://krasnodarzavod.ru/" target="__blank"> krasnodarzavod.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://super-pechka.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/super-pechka.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://super-pechka.ru/" target="__blank"> super-pechka.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://sibir.delay-bloki.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/sibir.delay-bloki.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://sibir.delay-bloki.ru/" target="__blank"> sibir.delay-bloki.ru </a>
+        </h3>
+        <p class="slider__item-p">Доработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://4-packing.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/4-packing.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://4-packing.ru/" target="__blank"> 4-packing.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://ussr-teplo.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/ussr-teplo.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://ussr-teplo.ru/" target="__blank"> ussr-teplo.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://baikal-smoke.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/baikal.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://baikal-smoke.ru/" target="__blank"> baikal-smoke.ru </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://spinerfly.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/spinerfly.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://spinerfly.ru/" target="__blank"> SpynerFly </a>
+        </h3>
+        <p class="slider__item-p">Разработка лендинга</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://leto.btlsochi.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/leto.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://leto.btlsochi.ru/" target="__blank"> Leto.btlsochi.ru </a>
+        </h3>
+        <p class="slider__item-p">Доработка сайта</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="layout/light-dark-modeJS/index.html" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/light-dark.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="layout/light-dark-modeJS/index.html" target="__blank">
+            Light-dark Mode
+          </a>
+        </h3>
+        <p class="slider__item-p">Светлая/темная тема сайта</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <a href="https://drivenew.ru/" target="__blank">
+          <img
+          class="slider__item-img"
+          src="img/portfolio/drivenews.webp"
+          alt=""
+          />
+        </a>
+        <h3 class="slider__item-h3">
+          <a href="https://drivenew.ru/" target="__blank"> DriveNews </a>
+        </h3>
+        <p class="slider__item-p">Более трех лет администрирования</p>
+      </div>
+    </div>
+    <div class="slider__item">
+      <div class="slider__item-block">
+        <img class="slider__item-img" src="img/mark.webp" alt="" />
+        <h3 class="slider__item-h3">
+          <a href="#"> ??? </a>
+        </h3>
+        <p class="slider__item-p">Место для Вашего проекта</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 contact__head">
+        <h2 class="title">Контактная информация</h2>
+      </div>
+      <div class="col-md-6 contact__head-left">
+        <ul>
+          <li>Сочи. Адлерский район.</li>
+          <li>Россия</li>
+          <li class="contact__head-inf">+7 (988) 505-42-19</li>
+          <li class="contact__head-inf">denwa799@yandex.ru</li>
+        </ul>
+      </div>
+      <div class="col-md-6 contact__head-right">
+        <ul class="icons">
+          <li class="icon">
+            <a href="https://vk.com/denwa799"
+            ><i class="fa fa-vk" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="icon">
+            <a href="mailto:denwa799@yandex.ru"
+            ><i class="fa fa-envelope-o" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="icon">
+            <a href="https://github.com/Denwa799"
+            ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"
+></script>
+<script src="js/particles.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
